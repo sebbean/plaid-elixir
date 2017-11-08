@@ -41,8 +41,7 @@ defmodule Plaid.Utilities do
   def encode_params(params, cred \\ %{}) do
     params
     |> Map.merge(cred)
-    |> Map.to_list
-    |> Enum.map_join("&", fn x -> pair(x) end)
+    |> Poison.encode!
   end
 
   @doc """

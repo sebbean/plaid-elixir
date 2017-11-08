@@ -79,7 +79,7 @@ defmodule Plaid do
   """
   def request_headers() do
     Map.new
-    |> Map.put("Content-Type", "application/x-www-form-urlencoded")
+    |> Map.put("Content-Type", "application/json")
   end
 
   @doc """
