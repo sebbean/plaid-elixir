@@ -10,7 +10,7 @@ defmodule Plaid.Mixfile do
      version: "0.3.0",
      description: @description,
      package: package(),
-     elixir: "~> 1.4",
+     elixir: "~> 1.3",
      test_coverage: [tool: ExCoveralls],
      preferred_cli_env: [
        "coveralls": :test,
